@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7716F31C2253859B005199B7 /* JokeViewControllerTests+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7716F31B2253859B005199B7 /* JokeViewControllerTests+Defaults.swift */; };
+		772021CC2253756C001C6983 /* JokeNetworkProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772021CB2253756C001C6983 /* JokeNetworkProviderTests.swift */; };
+		772021CF225375CD001C6983 /* JokeNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772021CE225375CD001C6983 /* JokeNetworkProvider.swift */; };
+		772021D12253761E001C6983 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772021D02253761E001C6983 /* URLBuilder.swift */; };
+		772021D322537629001C6983 /* URLBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772021D222537629001C6983 /* URLBuilderTests.swift */; };
+		772021D522537759001C6983 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772021D422537759001C6983 /* URLRequestBuilder.swift */; };
+		772021D72253785A001C6983 /* URLRequestBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772021D62253785A001C6983 /* URLRequestBuilderTests.swift */; };
+		772021D922537924001C6983 /* URLBuilderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772021D822537924001C6983 /* URLBuilderSpy.swift */; };
+		772021DC22537C78001C6983 /* URLSessionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772021DB22537C78001C6983 /* URLSessionAdapter.swift */; };
+		772021DE22538062001C6983 /* URLSessionAdapterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772021DD22538062001C6983 /* URLSessionAdapterSpy.swift */; };
+		772021E0225381E9001C6983 /* RequestBuilderStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772021DF225381E9001C6983 /* RequestBuilderStub.swift */; };
+		772021E42253842B001C6983 /* JokeParserFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772021E32253842B001C6983 /* JokeParserFake.swift */; };
+		77EC0E6E225100730090B566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0E6D225100730090B566 /* AppDelegate.swift */; };
+		77EC0E70225100730090B566 /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0E6F225100730090B566 /* JokeViewController.swift */; };
+		77EC0E75225100730090B566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EC0E74225100730090B566 /* Assets.xcassets */; };
+		77EC0E78225100730090B566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EC0E76225100730090B566 /* LaunchScreen.storyboard */; };
+		77EC0E95225101F20090B566 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0E94225101F20090B566 /* AppDelegateTests.swift */; };
+		77EC0E9B225102A50090B566 /* RootControllerFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0E97225102A50090B566 /* RootControllerFactoryImpl.swift */; };
+		77EC0E9C225102A50090B566 /* WindowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0E98225102A50090B566 /* WindowFactory.swift */; };
+		77EC0E9D225102A50090B566 /* RootControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0E99225102A50090B566 /* RootControllerFactory.swift */; };
+		77EC0E9E225102A50090B566 /* WindowFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0E9A225102A50090B566 /* WindowFactoryImpl.swift */; };
+		77EC0EB92251036C0090B566 /* WindowFactorySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0EB3225103460090B566 /* WindowFactorySpy.swift */; };
+		77EC0EBA225103A80090B566 /* RootControllerFactoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0EB6225103460090B566 /* RootControllerFactoryStub.swift */; };
+		77EC0EBD2251059F0090B566 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0EBC2251059F0090B566 /* main.swift */; };
+		77EC0EBE225105C50090B566 /* AppDelegateStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0EB8225103460090B566 /* AppDelegateStub.swift */; };
+		77EC0EC22251068C0090B566 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0EC12251068C0090B566 /* Joke.swift */; };
+		77EC0EC5225107440090B566 /* JokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0EC4225107440090B566 /* JokeTests.swift */; };
+		77EC0ECF2251094D0090B566 /* joke.json in Resources */ = {isa = PBXBuildFile; fileRef = 77EC0ECA2251094D0090B566 /* joke.json */; };
+		77EC0EDD225109F20090B566 /* Bundle+JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0ED4225109F20090B566 /* Bundle+JSONData.swift */; };
+		77EC0EDE225109F20090B566 /* Bundle+TestBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0ED5225109F20090B566 /* Bundle+TestBundle.swift */; };
+		77EC0EE0225109F20090B566 /* UIControl+SimulateTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0ED7225109F20090B566 /* UIControl+SimulateTap.swift */; };
+		77EC0EE822510E430090B566 /* JokeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0EE722510E430090B566 /* JokeProvider.swift */; };
+		77EC0EEF22510FC90090B566 /* RootControllerFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0EED22510FC90090B566 /* RootControllerFactoryTests.swift */; };
+		77EC0EF022510FC90090B566 /* WindowFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0EEE22510FC90090B566 /* WindowFactoryTests.swift */; };
+		77EC0EF3225112540090B566 /* sample_joke.json in Resources */ = {isa = PBXBuildFile; fileRef = 77EC0EF2225112540090B566 /* sample_joke.json */; };
+		77EC0EF5225112900090B566 /* JokeFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0EF4225112900090B566 /* JokeFileProvider.swift */; };
+		77EC0EF9225112D20090B566 /* JokeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0EF8225112D20090B566 /* JokeParser.swift */; };
+		77EC0EFB225112DA0090B566 /* JokeParserImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0EFA225112DA0090B566 /* JokeParserImpl.swift */; };
+		77EC0F012251134A0090B566 /* JSONDecoder+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0EFF2251134A0090B566 /* JSONDecoder+Default.swift */; };
+		77EC0F04225114AE0090B566 /* JokeProviderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0EB4225103460090B566 /* JokeProviderSpy.swift */; };
+		77EC0F0A22511CAF0090B566 /* JokeViewControllerTests+Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0F0922511CAE0090B566 /* JokeViewControllerTests+Refresh.swift */; };
+		77EC0F0C225124280090B566 /* JokeViewControllerTests+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC0F0B225124280090B566 /* JokeViewControllerTests+View.swift */; };
+		8EEC292E22573DF50054E05C /* NetworkActivityIndicatorAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC292D22573DF50054E05C /* NetworkActivityIndicatorAdapter.swift */; };
+		8EEC293222574DEC0054E05C /* NetActIndicatorAdapterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC293122574DEC0054E05C /* NetActIndicatorAdapterSpy.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77EC0E7F225100740090B566 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77EC0E62225100730090B566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77EC0E69225100730090B566;
+			remoteInfo = Joker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7716F31B2253859B005199B7 /* JokeViewControllerTests+Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JokeViewControllerTests+Defaults.swift"; sourceTree = "<group>"; };
+		772021CB2253756C001C6983 /* JokeNetworkProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeNetworkProviderTests.swift; sourceTree = "<group>"; };
+		772021CE225375CD001C6983 /* JokeNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeNetworkProvider.swift; sourceTree = "<group>"; };
+		772021D02253761E001C6983 /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		772021D222537629001C6983 /* URLBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilderTests.swift; sourceTree = "<group>"; };
+		772021D422537759001C6983 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		772021D62253785A001C6983 /* URLRequestBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilderTests.swift; sourceTree = "<group>"; };
+		772021D822537924001C6983 /* URLBuilderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilderSpy.swift; sourceTree = "<group>"; };
+		772021DB22537C78001C6983 /* URLSessionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionAdapter.swift; sourceTree = "<group>"; };
+		772021DD22538062001C6983 /* URLSessionAdapterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionAdapterSpy.swift; sourceTree = "<group>"; };
+		772021DF225381E9001C6983 /* RequestBuilderStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderStub.swift; sourceTree = "<group>"; };
+		772021E32253842B001C6983 /* JokeParserFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeParserFake.swift; sourceTree = "<group>"; };
+		77EC0E6A225100730090B566 /* Joker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77EC0E6D225100730090B566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77EC0E6F225100730090B566 /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
+		77EC0E74225100730090B566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77EC0E77225100730090B566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77EC0E79225100730090B566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77EC0E7E225100740090B566 /* JokerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77EC0E84225100740090B566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77EC0E94225101F20090B566 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
+		77EC0E97225102A50090B566 /* RootControllerFactoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootControllerFactoryImpl.swift; sourceTree = "<group>"; };
+		77EC0E98225102A50090B566 /* WindowFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowFactory.swift; sourceTree = "<group>"; };
+		77EC0E99225102A50090B566 /* RootControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootControllerFactory.swift; sourceTree = "<group>"; };
+		77EC0E9A225102A50090B566 /* WindowFactoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowFactoryImpl.swift; sourceTree = "<group>"; };
+		77EC0EB3225103460090B566 /* WindowFactorySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowFactorySpy.swift; sourceTree = "<group>"; };
+		77EC0EB4225103460090B566 /* JokeProviderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeProviderSpy.swift; sourceTree = "<group>"; };
+		77EC0EB6225103460090B566 /* RootControllerFactoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootControllerFactoryStub.swift; sourceTree = "<group>"; };
+		77EC0EB8225103460090B566 /* AppDelegateStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateStub.swift; sourceTree = "<group>"; };
+		77EC0EBC2251059F0090B566 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		77EC0EC12251068C0090B566 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		77EC0EC4225107440090B566 /* JokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTests.swift; sourceTree = "<group>"; };
+		77EC0ECA2251094D0090B566 /* joke.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = joke.json; sourceTree = "<group>"; };
+		77EC0ED4225109F20090B566 /* Bundle+JSONData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+JSONData.swift"; sourceTree = "<group>"; };
+		77EC0ED5225109F20090B566 /* Bundle+TestBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+TestBundle.swift"; sourceTree = "<group>"; };
+		77EC0ED7225109F20090B566 /* UIControl+SimulateTap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+SimulateTap.swift"; sourceTree = "<group>"; };
+		77EC0EE722510E430090B566 /* JokeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeProvider.swift; sourceTree = "<group>"; };
+		77EC0EED22510FC90090B566 /* RootControllerFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootControllerFactoryTests.swift; sourceTree = "<group>"; };
+		77EC0EEE22510FC90090B566 /* WindowFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowFactoryTests.swift; sourceTree = "<group>"; };
+		77EC0EF2225112540090B566 /* sample_joke.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_joke.json; sourceTree = "<group>"; };
+		77EC0EF4225112900090B566 /* JokeFileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeFileProvider.swift; sourceTree = "<group>"; };
+		77EC0EF8225112D20090B566 /* JokeParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeParser.swift; sourceTree = "<group>"; };
+		77EC0EFA225112DA0090B566 /* JokeParserImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeParserImpl.swift; sourceTree = "<group>"; };
+		77EC0EFF2251134A0090B566 /* JSONDecoder+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Default.swift"; sourceTree = "<group>"; };
+		77EC0F0922511CAE0090B566 /* JokeViewControllerTests+Refresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JokeViewControllerTests+Refresh.swift"; sourceTree = "<group>"; };
+		77EC0F0B225124280090B566 /* JokeViewControllerTests+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JokeViewControllerTests+View.swift"; sourceTree = "<group>"; };
+		8EEC292D22573DF50054E05C /* NetworkActivityIndicatorAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkActivityIndicatorAdapter.swift; sourceTree = "<group>"; };
+		8EEC293122574DEC0054E05C /* NetActIndicatorAdapterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetActIndicatorAdapterSpy.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77EC0E67225100730090B566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77EC0E7B225100740090B566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		772021C722537545001C6983 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				772021CE225375CD001C6983 /* JokeNetworkProvider.swift */,
+				772021D02253761E001C6983 /* URLBuilder.swift */,
+				772021D422537759001C6983 /* URLRequestBuilder.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		772021C92253755C001C6983 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				772021CA2253755E001C6983 /* Network */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		772021CA2253755E001C6983 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				772021CB2253756C001C6983 /* JokeNetworkProviderTests.swift */,
+				772021D222537629001C6983 /* URLBuilderTests.swift */,
+				772021D62253785A001C6983 /* URLRequestBuilderTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		772021DA22537C60001C6983 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				772021DB22537C78001C6983 /* URLSessionAdapter.swift */,
+				8EEC292D22573DF50054E05C /* NetworkActivityIndicatorAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		772021E222538424001C6983 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				772021E32253842B001C6983 /* JokeParserFake.swift */,
+			);
+			path = Fakes;
+			sourceTree = "<group>";
+		};
+		77EC0E61225100730090B566 = {
+			isa = PBXGroup;
+			children = (
+				77EC0E6C225100730090B566 /* Joker */,
+				77EC0E81225100740090B566 /* JokerTests */,
+				77EC0E6B225100730090B566 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77EC0E6B225100730090B566 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0E6A225100730090B566 /* Joker.app */,
+				77EC0E7E225100740090B566 /* JokerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77EC0E6C225100730090B566 /* Joker */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0E8F2251008C0090B566 /* Sources */,
+				77EC0E90225100C60090B566 /* Resources */,
+			);
+			path = Joker;
+			sourceTree = "<group>";
+		};
+		77EC0E81225100740090B566 /* JokerTests */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0EC62251094D0090B566 /* Fixtures */,
+				77EC0E8D2251007F0090B566 /* Doubles */,
+				77EC0E8E225100840090B566 /* Sources */,
+				77EC0E91225100FA0090B566 /* Resources */,
+				77EC0ED2225109F20090B566 /* Utilities */,
+			);
+			path = JokerTests;
+			sourceTree = "<group>";
+		};
+		77EC0E8D2251007F0090B566 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				772021E222538424001C6983 /* Fakes */,
+				77EC0EB0225103460090B566 /* Spies */,
+				77EC0EB5225103460090B566 /* Stubs */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		77EC0E8E225100840090B566 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				772021C92253755C001C6983 /* Provider */,
+				77EC0EEC22510FC90090B566 /* Factories */,
+				77EC0EC32251073D0090B566 /* Data */,
+				77EC0F0522511B450090B566 /* Screens */,
+				77EC0E94225101F20090B566 /* AppDelegateTests.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		77EC0E8F2251008C0090B566 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				772021DA22537C60001C6983 /* Adapters */,
+				77EC0EC0225106860090B566 /* Data */,
+				77EC0EBB225105990090B566 /* Application */,
+				77EC0E96225102A50090B566 /* Factories */,
+				77EC0EE622510E1D0090B566 /* Provider */,
+				77EC0EFC2251134A0090B566 /* Extensions */,
+				77EC0F022251146A0090B566 /* Screens */,
+				77EC0E6D225100730090B566 /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		77EC0E90225100C60090B566 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0E74225100730090B566 /* Assets.xcassets */,
+				77EC0E76225100730090B566 /* LaunchScreen.storyboard */,
+				77EC0E79225100730090B566 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		77EC0E91225100FA0090B566 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0E84225100740090B566 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		77EC0E96225102A50090B566 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0E98225102A50090B566 /* WindowFactory.swift */,
+				77EC0E9A225102A50090B566 /* WindowFactoryImpl.swift */,
+				77EC0E99225102A50090B566 /* RootControllerFactory.swift */,
+				77EC0E97225102A50090B566 /* RootControllerFactoryImpl.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		77EC0EB0225103460090B566 /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0EB3225103460090B566 /* WindowFactorySpy.swift */,
+				77EC0EB4225103460090B566 /* JokeProviderSpy.swift */,
+				772021D822537924001C6983 /* URLBuilderSpy.swift */,
+				772021DD22538062001C6983 /* URLSessionAdapterSpy.swift */,
+				8EEC293122574DEC0054E05C /* NetActIndicatorAdapterSpy.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
+		77EC0EB5225103460090B566 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0EB6225103460090B566 /* RootControllerFactoryStub.swift */,
+				77EC0EB8225103460090B566 /* AppDelegateStub.swift */,
+				772021DF225381E9001C6983 /* RequestBuilderStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		77EC0EBB225105990090B566 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0EBC2251059F0090B566 /* main.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		77EC0EC0225106860090B566 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0EF7225112C50090B566 /* Model */,
+				77EC0EF6225112B00090B566 /* Parser */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		77EC0EC32251073D0090B566 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0EC4225107440090B566 /* JokeTests.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		77EC0EC62251094D0090B566 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0ECA2251094D0090B566 /* joke.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		77EC0ED2225109F20090B566 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0ED3225109F20090B566 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		77EC0ED3225109F20090B566 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0ED4225109F20090B566 /* Bundle+JSONData.swift */,
+				77EC0ED5225109F20090B566 /* Bundle+TestBundle.swift */,
+				77EC0ED7225109F20090B566 /* UIControl+SimulateTap.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		77EC0EE622510E1D0090B566 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				772021C722537545001C6983 /* Network */,
+				77EC0EF1225112310090B566 /* File */,
+				77EC0EE722510E430090B566 /* JokeProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		77EC0EEC22510FC90090B566 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0EED22510FC90090B566 /* RootControllerFactoryTests.swift */,
+				77EC0EEE22510FC90090B566 /* WindowFactoryTests.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		77EC0EF1225112310090B566 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0EF2225112540090B566 /* sample_joke.json */,
+				77EC0EF4225112900090B566 /* JokeFileProvider.swift */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		77EC0EF6225112B00090B566 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0EF8225112D20090B566 /* JokeParser.swift */,
+				77EC0EFA225112DA0090B566 /* JokeParserImpl.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		77EC0EF7225112C50090B566 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0EC12251068C0090B566 /* Joke.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		77EC0EFC2251134A0090B566 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0EFD2251134A0090B566 /* JSONDecoder */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		77EC0EFD2251134A0090B566 /* JSONDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0EFF2251134A0090B566 /* JSONDecoder+Default.swift */,
+			);
+			path = JSONDecoder;
+			sourceTree = "<group>";
+		};
+		77EC0F022251146A0090B566 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0F03225114730090B566 /* Joke */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		77EC0F03225114730090B566 /* Joke */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0E6F225100730090B566 /* JokeViewController.swift */,
+			);
+			path = Joke;
+			sourceTree = "<group>";
+		};
+		77EC0F0522511B450090B566 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				77EC0F0622511B520090B566 /* Joke */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		77EC0F0622511B520090B566 /* Joke */ = {
+			isa = PBXGroup;
+			children = (
+				7716F31B2253859B005199B7 /* JokeViewControllerTests+Defaults.swift */,
+				77EC0F0B225124280090B566 /* JokeViewControllerTests+View.swift */,
+				77EC0F0922511CAE0090B566 /* JokeViewControllerTests+Refresh.swift */,
+			);
+			path = Joke;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77EC0E69225100730090B566 /* Joker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77EC0E87225100740090B566 /* Build configuration list for PBXNativeTarget "Joker" */;
+			buildPhases = (
+				77EC0E66225100730090B566 /* Sources */,
+				77EC0E67225100730090B566 /* Frameworks */,
+				77EC0E68225100730090B566 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Joker;
+			productName = Joker;
+			productReference = 77EC0E6A225100730090B566 /* Joker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77EC0E7D225100740090B566 /* JokerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77EC0E8A225100740090B566 /* Build configuration list for PBXNativeTarget "JokerTests" */;
+			buildPhases = (
+				77EC0E7A225100740090B566 /* Sources */,
+				77EC0E7B225100740090B566 /* Frameworks */,
+				77EC0E7C225100740090B566 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77EC0E80225100740090B566 /* PBXTargetDependency */,
+			);
+			name = JokerTests;
+			productName = JokerTests;
+			productReference = 77EC0E7E225100740090B566 /* JokerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77EC0E62225100730090B566 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = DaftAcademy;
+				TargetAttributes = {
+					77EC0E69225100730090B566 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					77EC0E7D225100740090B566 = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+						TestTargetID = 77EC0E69225100730090B566;
+					};
+				};
+			};
+			buildConfigurationList = 77EC0E65225100730090B566 /* Build configuration list for PBXProject "Joker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77EC0E61225100730090B566;
+			productRefGroup = 77EC0E6B225100730090B566 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77EC0E69225100730090B566 /* Joker */,
+				77EC0E7D225100740090B566 /* JokerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77EC0E68225100730090B566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77EC0EF3225112540090B566 /* sample_joke.json in Resources */,
+				77EC0E78225100730090B566 /* LaunchScreen.storyboard in Resources */,
+				77EC0E75225100730090B566 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77EC0E7C225100740090B566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77EC0ECF2251094D0090B566 /* joke.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77EC0E66225100730090B566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772021D12253761E001C6983 /* URLBuilder.swift in Sources */,
+				77EC0E9E225102A50090B566 /* WindowFactoryImpl.swift in Sources */,
+				77EC0EBD2251059F0090B566 /* main.swift in Sources */,
+				77EC0E9C225102A50090B566 /* WindowFactory.swift in Sources */,
+				77EC0F012251134A0090B566 /* JSONDecoder+Default.swift in Sources */,
+				772021D522537759001C6983 /* URLRequestBuilder.swift in Sources */,
+				772021DC22537C78001C6983 /* URLSessionAdapter.swift in Sources */,
+				77EC0EF9225112D20090B566 /* JokeParser.swift in Sources */,
+				77EC0EF5225112900090B566 /* JokeFileProvider.swift in Sources */,
+				77EC0E70225100730090B566 /* JokeViewController.swift in Sources */,
+				77EC0E6E225100730090B566 /* AppDelegate.swift in Sources */,
+				8EEC292E22573DF50054E05C /* NetworkActivityIndicatorAdapter.swift in Sources */,
+				77EC0E9B225102A50090B566 /* RootControllerFactoryImpl.swift in Sources */,
+				77EC0EC22251068C0090B566 /* Joke.swift in Sources */,
+				77EC0EE822510E430090B566 /* JokeProvider.swift in Sources */,
+				77EC0E9D225102A50090B566 /* RootControllerFactory.swift in Sources */,
+				772021CF225375CD001C6983 /* JokeNetworkProvider.swift in Sources */,
+				77EC0EFB225112DA0090B566 /* JokeParserImpl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77EC0E7A225100740090B566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772021E42253842B001C6983 /* JokeParserFake.swift in Sources */,
+				77EC0EBA225103A80090B566 /* RootControllerFactoryStub.swift in Sources */,
+				772021E0225381E9001C6983 /* RequestBuilderStub.swift in Sources */,
+				77EC0F0C225124280090B566 /* JokeViewControllerTests+View.swift in Sources */,
+				8EEC293222574DEC0054E05C /* NetActIndicatorAdapterSpy.swift in Sources */,
+				77EC0F04225114AE0090B566 /* JokeProviderSpy.swift in Sources */,
+				7716F31C2253859B005199B7 /* JokeViewControllerTests+Defaults.swift in Sources */,
+				772021D922537924001C6983 /* URLBuilderSpy.swift in Sources */,
+				77EC0E95225101F20090B566 /* AppDelegateTests.swift in Sources */,
+				772021DE22538062001C6983 /* URLSessionAdapterSpy.swift in Sources */,
+				772021D322537629001C6983 /* URLBuilderTests.swift in Sources */,
+				77EC0EC5225107440090B566 /* JokeTests.swift in Sources */,
+				77EC0EBE225105C50090B566 /* AppDelegateStub.swift in Sources */,
+				77EC0F0A22511CAF0090B566 /* JokeViewControllerTests+Refresh.swift in Sources */,
+				77EC0EE0225109F20090B566 /* UIControl+SimulateTap.swift in Sources */,
+				772021CC2253756C001C6983 /* JokeNetworkProviderTests.swift in Sources */,
+				77EC0EB92251036C0090B566 /* WindowFactorySpy.swift in Sources */,
+				77EC0EEF22510FC90090B566 /* RootControllerFactoryTests.swift in Sources */,
+				77EC0EF022510FC90090B566 /* WindowFactoryTests.swift in Sources */,
+				772021D72253785A001C6983 /* URLRequestBuilderTests.swift in Sources */,
+				77EC0EDD225109F20090B566 /* Bundle+JSONData.swift in Sources */,
+				77EC0EDE225109F20090B566 /* Bundle+TestBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77EC0E80225100740090B566 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77EC0E69225100730090B566 /* Joker */;
+			targetProxy = 77EC0E7F225100740090B566 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77EC0E76225100730090B566 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77EC0E77225100730090B566 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77EC0E85225100740090B566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77EC0E86225100740090B566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77EC0E88225100740090B566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Joker/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.daftacademy.ioslevelup.Joker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77EC0E89225100740090B566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Joker/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.daftacademy.ioslevelup.Joker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		77EC0E8B225100740090B566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JokerTests/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.daftacademy.ioslevelup.JokerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Joker.app/Joker";
+			};
+			name = Debug;
+		};
+		77EC0E8C225100740090B566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JokerTests/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.daftacademy.ioslevelup.JokerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Joker.app/Joker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77EC0E65225100730090B566 /* Build configuration list for PBXProject "Joker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77EC0E85225100740090B566 /* Debug */,
+				77EC0E86225100740090B566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77EC0E87225100740090B566 /* Build configuration list for PBXNativeTarget "Joker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77EC0E88225100740090B566 /* Debug */,
+				77EC0E89225100740090B566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77EC0E8A225100740090B566 /* Build configuration list for PBXNativeTarget "JokerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77EC0E8B225100740090B566 /* Debug */,
+				77EC0E8C225100740090B566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77EC0E62225100730090B566 /* Project object */;
+}
